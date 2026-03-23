@@ -12,7 +12,7 @@ namespace CatShow.Data.Entities
         [MaxLength(30)]
         public string Breed { get; set; } = null!;
         [Required]
-        [MaxLength(30)]
+        [Range(0, 15)]
         public int Age { get; set; }
         public string Picture { get; set; }= null!;
     }
